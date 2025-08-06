@@ -5,7 +5,7 @@ using System.Windows.Forms;
 
 public class RoundedPanel : Panel
 {
-    private int cornerRadius = 10;
+    private int cornerRadius = 5;
 
     protected override void OnPaint(PaintEventArgs e)
     {
@@ -20,12 +20,6 @@ public class RoundedPanel : Panel
 
             this.Region = new Region(path);
 
-            // Optional: Rahmen zeichnen
-            using (Pen pen = new Pen(Color.Gray, 1))
-            {
-                e.Graphics.SmoothingMode = SmoothingMode.AntiAlias;
-                e.Graphics.DrawPath(pen, path);
-            }
         }
     }
 }
