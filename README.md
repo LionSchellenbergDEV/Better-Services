@@ -32,10 +32,6 @@ A modern, user-friendly tool for managing Windows services with improved control
 
 > ℹ️ You must run the application as an administrator to manage services.
 
-## 📷 Screenshot
-
-![App Screenshot](screenshot.png) <!-- Optional: Replace with your actual screenshot -->
-
 ## 📄 License
 
 This project is open source and available under the [MIT License](LICENSE).
