@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Forms.VisualStyles;
+using static System.Windows.Forms.LinkLabel;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Better_Services
@@ -105,7 +106,7 @@ namespace Better_Services
         private void runningList_SelectedIndexChanged(object sender, EventArgs e)
         {
             stopServiceBtn.Enabled = true;
-           
+            restartBtn.Enabled = true;
         }
 
         private void stoppedList_SelectedIndexChanged(object sender, EventArgs e)
@@ -199,9 +200,7 @@ namespace Better_Services
 
         private void funktionsübersichtToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(this, "Aktualisieren (manuell): Um die Anwendung manuell zu aktualisieren klicke auf Aktionen -> Aktualisieren (manuell)" +
-                "\n\nAuto-Refresh: Um Auto-Refresh zu aktivieren / deaktivieren klicke auf Aktionenen -> Auto-Refresh",
-                                   "Funktionsübersicht");
+            MessageBox.Show(this, "Update (manual): To manually update the application, click on Actions -> Refresh (Manual)\n\nAuto - Refresh: To enable or disable auto - refresh, click on Actions->Auto - Refresh");
         }
 
         private void aktualisierenToolStripMenuItem_Click(object sender, EventArgs e)
